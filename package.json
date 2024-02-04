@@ -1,0 +1,15 @@
+{
+  "name": "banking",
+  "version": "1.0.0",
+  "description": "banking app",
+  "main": "tailwind.config.js",
+  "scripts": {
+      "build": "tailwindcss -i ./src/input.css -o ./dist/styles.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+  },
+  "author": "Darkweb",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
