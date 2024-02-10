@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>Microleasing</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="/dist/styles.css" rel="stylesheet">
+    <link href="/dist/contact-form.css" rel="stylesheet">
+    <link href="/dist/php.css" rel="stylesheet">
+    <style>
+      /* Custom CSS for dropdown on hover */
+      .group:hover .down {
+        opacity: 1;
+      }
+  
+      .down {
+        opacity: 0;
+        z-index: 100;
+      }
+      #map{
+        width: 82vw;
+        border: 0;
+        height: 44vh;
+      }
+      .crew{
+        margin-top: 33px;
+      }
+      </style>
+</head>
+<body>
+    <header>
+      <div class="landing_page">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="./index.html" class="navbar-brand w-2/5" style="width: 40%;">
+            <img src="./images/Logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" id="btn">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="w-full  flex-grow lg:flex lg:items-center lg:w-auto hidden" id="menu">
+            <ul class="navbar-nav mx-auto gap-9">
+              <li class="nav-item active relative group ">
+                <a  style="display: flex;" class="nav-link flex items-center gap-4 text-gray-700 hover:text-gray-900 focus:outline-none" href="sign up.html">Loans <span class="sr-only">(current)</span>
+                <img src="images/Vector.png" alt="">
+                </a>
+                <div class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white down">
+                  <div class="py-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Category 1</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Category 2</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Category 3</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item active relative group">
+                <a style="display: flex;" class="nav-link flex items-center gap-4" href="investment.html">Investment
+                  <img src="images/Vector.png" alt="">
+                </a>
+                <div class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white down">
+                  <div class="py-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Category 1</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Category 2</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Category 3</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+      
+            <!-- Online Banking link -->
+            <form class="form-inline my-2 my-lg-0 d-lg-none">
+              <a class="border border-primary p-2 text-center" href="sign up.html">Online Banking</a>
+            </form>
+          </div>
+      
+          <!-- Online Banking link for larger screens -->
+          <form class="form-inline my-2 my-lg-0 d-none d-lg-block">
+            <a class="border border-primary p-2 text-center" href="sign up.html">Online Banking</a>
+          </form>
+        </nav>
+      </div>
+    </header>
+
+        <!--Talk to us-->
+          <main>
+         <section class="mx-auto max-w-screen-md p-4">
+                <h1 class="font-extrabold text-3xl mb-4">Talk To <span>Us!</span></h1>
+                <p class="mb-4 text-sm">If you have any questions please feel free to contact with us.</p>
+                <div>
+
+                  <div class="bg-white shadow-md rounded-lg p-16" id="fcf-form">
+                  <!-- <h3 class="fcf-h3">Contact us</h3> -->
+              
+                  <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                      
+                      <div class="fcf-form-group">
+                          <label for="Name" class="fcf-label">Your name</label>
+                          <div class="fcf-input-group">
+                              <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                          </div>
+                      </div>
+              
+                      <div class="fcf-form-group">
+                          <label for="Email" class="fcf-label">Your email address</label>
+                          <div class="fcf-input-group">
+                              <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                          </div>
+                      </div>
+              
+                      <div class="fcf-form-group">
+                          <label for="Message" class="fcf-label">Your message</label>
+                          <div class="fcf-input-group">
+                              <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                          </div>
+                      </div>
+              
+                      <div class="fcf-form-group">
+                          <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                      </div>
+                                            
+                  </form>
+                  </div>
+              
+                </div>
+                <div class="flex flex-col items-center justify-center h-screen mt-20 crew">
+                  <!-- Map container with Tailwind CSS styles -->
+                  <div class="w-5/6 h-96 rounded-lg overflow-hidden shadow-lg">
+                    <!-- Replace YOUR_MAPBOX_ACCESS_TOKEN with your actual Mapbox access token -->
+                    <iframe 
+                    id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.763171208657!2d-122.41941558469384!3d37.77492987975822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1643940137548!5m2!1sen!2sus" 
+                    width="100vw" 
+                    height="100%" 
+                    style="border: 0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                  </iframe>
+                  </div>
+              
+                  <!-- Additional content or styles can be added here -->
+              
+                </div>
+        </section>
+
+
+                   
+            <!-- About us session begins -->
+                                          <section class=" bg-white  my-8 py-10 px-5">
+                                            <div class="card-deck grid-cols-3 gap-7 container mx-auto">
+                                              <div class="card border-0">
+                                                 <div class="card-body">
+                                                  <h5 class="card-title text-pull font-extrabold text-2xl">About</h5>
+                                                  <p class="card-text my-7">At Micro Leasing Limited, we provide a fast, 
+                                                    seamless Loan application, approval and 
+                                                    disbursement process.</p>
+                                                    <div class="address md:mt-6">
+                                                      <ul>
+                                                      <li class="flex items-center mt-4  gap-3 text-xs">
+                                                        <img class="h-auto max-w-sm w-8 flex" src="./images/Group (1).png" alt="">
+                                                        +234 7030036020
+                                                      </li></ul>
+                                                      <ul>
+                                                      <li class="flex items-center gap-3 text-xs">
+                                                        <img class="h-auto max-w-sm w-8 flex" src="./images/Group (2).png" alt="">
+                                                        <a href="#">customerservice@microleasingltd.com</a>
+                                                      </li></ul>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="card border-0 grid-cols-3 gap-7 container mx-auto">
+                                                <div class="card-body">
+                                                  <h5 class="card-title text-pull font-extrabold text-2xl">Quick Links</h5>
+                                                    <ul class="my-7 space-y-2">
+                                                      <li><a href="#">Loan</a></li>
+                                                      <li><a href="investment.html">Investment</a></li>
+                                                      <li><a href="contact.html">Contact Us</a></li>
+                                                      <li><a href="about.html">About Us</a></li>
+                                                      <li><a href="#">Get loan now</a></li>
+                                                    </ul>
+                                                </div>
+                                              </div>
+                                              <div class="card border-0 grid-cols-3 gap-7 container mx-auto">
+                                                <div class="card-body">
+                                                  <h5 class="card-title text-pull font-extrabold text-2xl">Open Hours</h5>
+                                                  <p class="my-7">We are at your service from Mondays to Fridays for transactions, 
+                                                    but you can drop your messages in the contact page box 
+                                                    when the physical office is closed <br>
+                                                    
+                                                    <span>Monday - Friday 8.00-05.30 <br>
+                                                      Saturday Closed <br>
+                                                      Sunday Closed</span></p>
+                                                </div>
+                                              </div>
+                                            </div>  
+                                    </section>
+          </main>
+                  
+                                 
+                                    
+                <footer class="font-body">
+                  <div class="flex items-center mx-auto justify-center gap-8 relative">
+                    <h3>©Copyright 2023 | All Rights Reserved by Microleasingltd.com</h3>
+                    <img class="w-52 absolute right-0 hidden md:block" src="./images/Logo.png" alt="logo end">
+                  </div>
+                </footer>
+         
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script>
+          const btn= document.getElementById("btn")
+          const menu= document.getElementById("menu")
+          btn.onclick = function () {
+            menu.classList.toggle('hidden')
+          }
+          
+        </script>
+    </body>
+</html>
