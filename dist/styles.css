@@ -2047,6 +2047,10 @@ video {
   background-image: url('images/');
 }
 
+.bg-\[url\(\'images\/loansheaderbanner-min\.png\'\)\]{
+  background-image: url('images/loansheaderbanner-min.png');
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
