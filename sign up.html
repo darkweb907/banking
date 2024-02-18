@@ -22,6 +22,14 @@
 		  opacity: 0;
 		  z-index: 100;
 		}
+		.card{
+			background-color: #59595d;
+			color: white;
+		}
+		.over:hover{
+			text-decoration: none;
+			background-color: red;
+		}
 	  </style>
 </head>
 <body>
@@ -36,7 +44,7 @@
 			</button>
 		
 			<div class="w-full  flex-grow lg:flex lg:items-center lg:w-auto hidden" id="menu">
-			  <ul class="navbar-nav mx-auto gap-9">
+			  <ul class="navbar-nav mx-auto md:gap-9">
 				<li class="nav-item active relative group ">
 				  <a  style="display: flex;" class="nav-link flex items-center gap-4 text-gray-700 hover:text-gray-900 focus:outline-none" href="sign up.html">Loans <span class="sr-only">(current)</span>
 				  <img src="images/Vector.png" alt="">
@@ -80,65 +88,106 @@
 			  <a class="border border-primary p-2 text-center" href="sign up.html">Online Banking</a>
 			</form>
 		  </nav>
+		  <div class="banner">
+			<div class="banner-text bg-red-500 w-full  bg-cover bg-no-repeat bg-center bg-[url('images/')]" style="height: 60vh;">
+				<div class="container mx-auto h-full d-flex flex-col justify-center gap-6">
+					<h1 class="font-bold text-3xl md:text-4xl   md:w-[55%]">Get instant personal loans of up to ₦5 million.</h1>
+					<div>
+						<button class="border border-primary rounded-full py-3 px-7 text-center">Apply Now</button>
+					</div>
+				</div>
+			</div>
+		  </div>
 		</div>
 	  </header> 
-    <div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-5 sm:px-6 lg:px-8">
-		<div class="max-w-md w-full space-y-8">
-			<div>
-				
-				<h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-					Sign in to your account
-				</h2>
-				<!-- <p class="mt-2 text-center text-sm text-gray-600">
-					Or
-					<a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
-						start your 14-day free trial
-					</a>
-				</p> -->
+	  <main class="bg-[#f3f1f2]">
+		<section class="loan mt-11">
+			<div class="container mx-auto text-center">
+				<h3 class="font-bold text-2xl md:text-3xl text-blue-500 mb-3">Loans & Credits</h3>
+				<p class="md:text-2xl text-xl text-[rgb(51, 51, 51)] mb-3">Do you have an urgent need for cash to settle bills, take care of emergencies or grab an opportunity? Does payday seem so far and bills are piling up?
+					 Don’t worry! Our convenient, secure and instant loans have got you covered.</p>
+				<p class="md:text-2xl text-xl">Apply for a loan now and get the funds in less than 3 hours.</p>
 			</div>
-			<form class="mt-8 space-y-6 px-5" action="#" method="POST">
-				<input type="hidden" name="remember" value="True">
-				<div class="rounded-md shadow-sm -space-y-px flex flex-col gap-4">
-					<div>
-						<label for="email-address" class="sr-only">Email address</label>
-						<input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+		</section>
+		<section class="img my-8">
+			<div class="container">
+				<div class=" md:w-[40%] mx-auto mt-5 flex items-center text-center flex-col">
+					<img  src="images/simplerateandterm-min.png" alt="loan img" width="140"/>
+					<h3 class="font-bold text-2xl md:text-3xl text-blue-500 mb-3">Simple Repayment Terms And Rates</h3>
+					<p class="text-xl ">There are no hidden charges, our repayment terms are clear and convenient, and you don’t need to have a cheque book</p>
+				</div>
+				<div class=" w-[70%] mx-auto mt-5 flex gap-12 justify-between items-center text-center flex-col md:flex-row">
+					<div class="md:w-[368px]">
+					  <img class="mx-auto"  src="images/simplerateandterm-min.png" alt="loan img" width="140"/>
+					  <h3 class="font-bold text-3xl text-blue-500 mb-3">Hassle Free</h3>
+					  <p class="text-lg">Easy to use tools from anywhere. Instant cash immediately your loan is approved . No gimmicks, confusing terms or hidden charges.</p>
 					</div>
-					<div>
-						<label for="password" class="sr-only">Password</label>
-						<input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
+					<div class="md:w-[368px]">
+					  <img class="mx-auto"  src="images/simplerateandterm-min.png" alt="loan img" width="140"/>
+					  <h3 class="font-bold text-3xl text-blue-500 mb-3">Instant Cash</h3>
+					  <p class="text-lg">Whenever or wherever you need cash, we’re right there.</p>
 					</div>
 				</div>
-
-				<div class="flex items-center justify-between">
-					<div class="flex items-center">
-						<input id="remember_me" name="remember_me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
-						<label for="remember_me" class="ml-2 block text-sm text-gray-900">
-							Remember me
-						</label>
-					</div>
-
-					<div class="text-sm">
-						<a href="password.html" class="font-medium text-indigo-600 hover:text-indigo-500">
-							Forgot your password?
-						</a>
+			</div>
+			<div class="mt-16 text-center ">
+				<a href="contact.html" class="over border bg-blue-500 text-white rounded-full py-2 px-9 text-center  hover:text-red-600">Apply Now</a>
+			</div>
+		</section>
+		<section class=" bg-[#59595d]  md:my-8 py-10 px-2  mx-auto">
+			<div class="card-deck grid-cols-3 gap-7 container ">
+			  <div class="card border-0">
+				 <div class="card-body">
+				  <h5 class="card-title text-pull font-extrabold text-2xl md:my-7">About</h5>
+				  <p class="card-text my-7 flex">At Micro Leasing Limited, we provide a fast, 
+					seamless Loan application, approval and 
+					disbursement process.</p>
+					<div class="address md:mt-6">
+					  <ul>
+					  <li class="flex items-center md:mt-4  gap-3 text-xs">
+						<img class="h-auto max-w-sm w-8 flex" src="./images/Group (1).png" alt="">
+						+234 7030036020
+					  </li></ul>
+					  <ul>
+					  <li class="flex items-center gap-3 text-xs">
+						<img class="h-auto max-w-sm w-8 flex" src="./images/Group (2).png" alt="">
+						<a href="#">customerservice@microleasingltd.com</a>
+					  </li></ul>
 					</div>
 				</div>
-
-				<div>
-					<button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-						<span class="absolute left-0 inset-y-0 flex items-center pl-3">
-							<!-- Heroicon name: solid/lock-closed -->
-							<svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="True">
-								<path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
-							</svg>
-						</span>
-						Sign in
-					</button>
+			  </div>
+			  <div class="card border-0 grid-cols-3 gap-7">
+				<div class="card-body">
+				  <h5 class="card-title text-pull font-extrabold text-2xl md:my-7 flex">Quick Links</h5>
+					<ul class="space-y-2">
+					  <li><a href="#">Loan</a></li>
+					  <li><a href="investment.html">Investment</a></li>
+					  <li><a href="contact.html">Contact Us</a></li>
+					  <li><a href="about.html">About Us</a></li>
+					  <li><a href="#">Get loan now</a></li>
+					</ul>
 				</div>
-			</form>
-			
+			  </div>
+			  <div class="card border-0 grid-cols-3 gap-7">
+				<div class="card-body">
+				  <h5 class="card-title text-pull font-extrabold text-2xl flex">Open Hours</h5>
+				  <p class="my-7">We are at your service from Mondays to Fridays for transactions, 
+					but you can drop your messages in the contact page box 
+					when the physical office is closed <br>
+					
+					<span class="md:mt-4 inline-block">Monday - Friday 8.00-05.30 <br>
+					  Saturday Closed <br>
+					  Sunday Closed</span></p>
+				</div>
+			  </div>
+			</div>  
+	</section>
+	  </main>
+	  <footer class="font-body container mx-auto">
+		<div class="flex items-center mx-auto justify-center gap-8 relative">
+		  <h3>©Copyright 2023 | All Rights Reserved by Microleasingltd.com</h3>
+		  <img class="w-52 absolute right-0 hidden md:block" src="./images/Logo.png" alt="logo end">
 		</div>
-	</div>
+	  </footer>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 	<script>
